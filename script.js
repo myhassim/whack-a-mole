@@ -17,7 +17,7 @@ const randomMole = (moles) => {
 	lastMole = mole
 	return mole
 }
-function up() {
+const up = () => {
 	let mole = randomMole(moles)
 	let time = randomTime(100, 1000)
 	$(mole).addClass('up')
@@ -32,12 +32,12 @@ function up() {
 		}
 	}, time)
 }
-function wack(e) {
+const wack = (e) => {
 	score++
 	$(e.target).removeClass('up')
 	$(scoreCard).text(score)
 }
-function startGame() {
+const startGame =()=> {
 	$(scoreCard).text('0')
 	score = 0
 	$(btn).attr('disabled')
