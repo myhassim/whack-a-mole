@@ -1,0 +1,13 @@
+body {
+	background: url("https://cdn.discordapp.com/attachments/618449580761284659/680703014364774400/grass-field-thumbnail.jpg");
+}
+svg {
+	height: fit-content;
+}
+.mole {
+	transform: translateY(70px);
+	transition: 0.4s;
+}
+svg .up {
+	transform: translateY(0px);
+}
